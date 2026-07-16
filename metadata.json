@@ -1,0 +1,6 @@
+{
+  "name": "Prakriti Psychological Wellness Clinic",
+  "description": "A premium, trust-first marketing website and appointment booking system for a clinical psychologist, featuring a client-side public site and an internal admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
