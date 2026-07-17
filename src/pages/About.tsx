@@ -46,7 +46,7 @@ export default function About() {
               <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-lg border-4 border-white">
                 <img 
                   src="/image.png" 
-                  alt="Dr. Sarah Jenkins" 
+                  alt="Dr Prakriti Sinha" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -60,7 +60,7 @@ export default function About() {
             </motion.div>
             
             <motion.div {...fadeInUp} className="space-y-6">
-              <h2 className="text-3xl font-serif text-charcoal">Dr. Sarah Jenkins</h2>
+              <h2 className="text-3xl font-serif text-charcoal">Dr Prakriti Sinha</h2>
               <h3 className="text-primary-600 font-medium">Founder & Lead Clinical Psychologist</h3>
               
               <div className="space-y-4 text-gray-600 leading-relaxed">
