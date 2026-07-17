@@ -45,7 +45,7 @@ export default function About() {
             >
               <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-lg border-4 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1200&auto=format&fit=crop" 
+                  src="/image.png" 
                   alt="Dr. Sarah Jenkins" 
                   className="w-full h-full object-cover"
                 />

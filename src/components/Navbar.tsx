@@ -21,10 +21,7 @@ export function Navbar() {
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary-400 text-white">
-                <UserRound className="h-6 w-6" />
-              </div>
-              <span className="font-serif text-2xl font-semibold text-primary-700">Prakriti</span>
+              <img src="/logo.png" alt="Prakriti Logo" className="h-12 w-auto object-contain" />
             </Link>
           </div>
           

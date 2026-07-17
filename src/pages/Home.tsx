@@ -34,27 +34,27 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-background pt-20 pb-32 lg:pt-32 lg:pb-40">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-5"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background"></div>
+        <div className="absolute inset-0 bg-[url('/image.copy.png')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-gray-900/70"></div>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-5xl lg:text-7xl font-serif font-medium text-charcoal mb-6 leading-tight"
+              className="text-5xl lg:text-7xl font-serif font-medium text-zinc-50 mb-6 leading-tight drop-shadow-2xl"
             >
               Find peace and <span className="text-primary-400 italic">balance</span> in your life.
             </motion.h1>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
-              className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed"
+              className="text-lg text-zinc-200 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-lg"
             >
               Premium psychological care tailored to your unique journey. We provide a safe space for healing, growth, and self-discovery.
             </motion.p>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.5 }}
@@ -63,7 +63,7 @@ export default function Home() {
               <Button size="lg" asChild>
                 <Link to="/book">Book an Appointment</Link>
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-charcoal backdrop-blur-sm" asChild>
                 <a href="tel:+1234567890">Call (123) 456-7890</a>
               </Button>
             </motion.div>
@@ -81,7 +81,7 @@ export default function Home() {
               { icon: Shield, label: "100%", sub: "Confidential" },
               { icon: Clock, label: "Flexible", sub: "Scheduling" },
             ].map((stat, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -105,7 +105,7 @@ export default function Home() {
             <h2 className="font-serif text-4xl text-charcoal mb-4">Our Services</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">Comprehensive psychological care designed for your specific needs.</p>
           </motion.div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, i) => (
               <motion.div
@@ -140,7 +140,7 @@ export default function Home() {
             <h2 className="font-serif text-4xl text-charcoal mb-4">Your Journey to Wellness</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">A simple, transparent process to get you the help you need.</p>
           </motion.div>
-          
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map((step, i) => (
               <motion.div
@@ -169,7 +169,7 @@ export default function Home() {
           <motion.div {...fadeInUp} className="text-center mb-12">
             <h2 className="font-serif text-4xl text-charcoal mb-4">Frequently Asked Questions</h2>
           </motion.div>
-          
+
           <div className="space-y-6">
             {faqs.map((faq, i) => (
               <motion.div

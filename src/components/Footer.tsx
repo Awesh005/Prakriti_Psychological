@@ -7,7 +7,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           <div className="space-y-4">
-            <span className="font-serif text-2xl font-semibold text-primary-700">Prakriti</span>
+            <img src="/logo.png" alt="Prakriti Logo" className="h-12 w-auto object-contain mb-2" />
             <p className="text-sm text-gray-500 max-w-xs leading-relaxed">
               Providing compassionate, evidence-based psychological care to help you find balance, healing, and personal growth.
             </p>
